@@ -70,6 +70,7 @@ class ShortcutService
                             ->setFilename($attachment->getClientOriginalName())
                     );
             }
+        }
 
         //queue the message
         $mailerSpool->queueMessage($message);
